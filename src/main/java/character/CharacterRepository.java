@@ -27,6 +27,16 @@ public class CharacterRepository {
         return character;
     }
 
+    Character editCharacter(int number,int age, String name, Race race, Weapon weapon){
+        Character character = characters.get(number);
+        character.setName(name);
+        character.setAge(age);
+        character.setRace(race);
+        character.setWeapon(weapon);
+        characters.set(number,character);
+        return character;
+    }
+
 
 
 
