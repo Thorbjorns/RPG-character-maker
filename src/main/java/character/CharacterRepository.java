@@ -22,6 +22,7 @@ public class CharacterRepository {
     }
 
     Character chooseCharacter(int indexNumber){
+        showAllCharacters();
         Character character = characters.get(indexNumber);
         System.out.println(character);
         return character;
